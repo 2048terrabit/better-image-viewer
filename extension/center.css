@@ -1,0 +1,63 @@
+.viewer-body {
+    background-color: #777;
+    margin:0px;
+}
+
+
+.viewer-body > .image {
+    position: fixed;
+    margin: 0px;
+    box-shadow: rgba(0,0,0,0.6) 2px 2px 15px;
+    -webkit-user-select: none;
+}
+
+.viewer-body > .zoom-tooltip {
+    background-color: rgba( 0, 0, 0, 0.5);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 0.2rem;
+    position:fixed;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.viewer-body > .round-button {
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 20px 15px;
+    margin-left: auto;
+    box-shadow: rgba(0,0,0,0.6) 2px 2px 15px;
+}
+
+.viewer-body > .round-button:hover {
+    background-color: #ccc;
+}
+
+.viewer-body > .box {
+    display:none;
+    height:100px;
+    width:120px;
+    right: 80px;
+    top: 0px;
+    padding: 20px;
+    background-color: white;
+    margin: 20px 15px;
+    -webkit-filter: drop-shadow(2px 2px 10px rgba(0,0,0,0.5));
+    position: absolute;
+}
+
+.viewer-body > .box:before {
+    content:"";
+    position: absolute;
+    left: 100%;
+    top: 15px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 16px solid white;
+    border-bottom: 10px solid transparent;
+}
